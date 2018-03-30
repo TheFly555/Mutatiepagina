@@ -1,0 +1,44 @@
+.navbar-static-bottom {
+color:#A4A4A4;
+margin: 0px 0 0px 0px;
+border-radius: 0px;
+}
+
+
+
+a{
+  color:#424242;
+  text-decoration: none;
+}
+
+.footer_linkjes
+{
+  color:#A4A4A4;
+  text-decoration: none;
+}
+
+.border_cv{
+  border: 1px solid black;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.footer_regels{
+  color:#A4A4A4;
+}
+
+.part{
+  blackground-color: #2E2E2E;
+}
+
+.gallery_img{
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+td{
+  width: 200px;
+  height: 50px;
+}
