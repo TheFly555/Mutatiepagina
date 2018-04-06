@@ -42,3 +42,28 @@ td{
   width: 200px;
   height: 50px;
 }
+
+.inputDescription{
+  font-size: 10px;
+  color: #717171;
+}
+
+.alertText{
+  padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    width: 60%;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.succesText{
+  padding: 20px;
+    background-color: #33cc59;
+    color: white;
+    margin-bottom: 15px;
+    width: 60%;
+    border: 4px solid white;
+    border-radius: 15px;
+}
