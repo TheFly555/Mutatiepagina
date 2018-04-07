@@ -51,6 +51,9 @@
     <br>
     <!--Include Winkel toevoegen form-->
     <?php include_once 'templates\addWinkel.php'; ?>
+    <br>
+    <!--Include stad wnikel-->
+    <?php include_once 'templates\addStadWinkel.php'; ?>
     </center>
   </body>
 </html>
