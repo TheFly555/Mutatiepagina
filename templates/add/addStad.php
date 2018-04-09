@@ -1,7 +1,7 @@
 <div class="container border_cv">
   <div class="col-md-12">
     <h4>Voeg een stad toe aan de database:</h4>
-    <form action="backend/add/addStad.php" method="post">
+    <form action="../backend/add/addStad.php" method="post">
       <table>
         <tr>
           <td>

@@ -32,7 +32,7 @@
         <!--Navigation bar tabs-->
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="portfolio.php">Insert</a></li>
+            <li><a href="templates/addIndex.php">Insert</a></li>
             <!--Insert tab-->
             <li><a href="portfolio.php">Delete</a></li>
             <!--Delete tab-->
@@ -44,16 +44,9 @@
     </div>
     <center>
     <!-- Content -->
-    <!-- alert bar when there is an error -->
-    <?php include_once 'templates\errorMessage.php'; ?>
-    <!--Include Stad toevoegen form-->
-    <?php include_once 'templates\addStad.php'; ?>
-    <br>
-    <!--Include Winkel toevoegen form-->
-    <?php include_once 'templates\addWinkel.php'; ?>
-    <br>
-    <!--Include stad wnikel-->
-    <?php include_once 'templates\addStadWinkel.php'; ?>
+    <div class="border_cv">
+      <a href="templates/addIndex.php">Insert</a>
+    </div>
     </center>
   </body>
 </html>

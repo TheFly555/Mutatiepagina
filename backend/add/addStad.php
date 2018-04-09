@@ -13,24 +13,24 @@
 
   //if Condition: check if submit button is clicked and redirect
   if (!isset($_POST['submitAddStad'])) {
-    header("location: ../../index.php?signup=error");
+    header("location: ../../templates/addIndex.php?signup=error");
   }
   //Elseif Condition: check if an input is empty and redirect
   elseif (empty($stad) || empty($populatie)) {
-    header("location: ../../index.php?signup=empty");
+    header("location: ../../templates/addIndex.php?signup=empty");
   }
   //Elseif Condition: valid characters check and redirect
   elseif (!preg_match("/^[ a-zA-Z-]*$/", $stad)) {
-    header("location: ../../index.php?signup=unvalidCharacters");
+    header("location: ../../templates/addIndex.php?signup=unvalidCharacters");
   }
   //Elseif Condition: double data check and redirect
   elseif ($rowCount >= 1) {
-    header("location: ../../index.php?signup=dubbleDataStad");
+    header("location: ../../templates/addIndex.php?signup=dubbleDataStad");
   }
   //Else condition: Add entry to the database
   else{
     $sqlInsert = "INSERT INTO stad (naam, populatie) VALUES ('$stad', '$populatie');";
     mysqli_query($conn, $sqlInsert);
-    header("location: ../../index.php?signup=succes");
+    header("location: ../../templates/addIndex.php?signup=succes");
   }
 ?>

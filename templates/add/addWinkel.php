@@ -1,7 +1,7 @@
 <div class="container border_cv">
   <div class="col-md-12">
     <h4>Voeg een Winkel toe aan de database:</h4>
-    <form action="backend/add/addwinkel.php" method="post">
+    <form action="../backend/add/addwinkel.php" method="post">
       <table>
         <tr>
           <td>

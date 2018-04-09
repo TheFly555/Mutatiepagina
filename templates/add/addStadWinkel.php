@@ -1,8 +1,8 @@
-<?php include_once "backend/dbconnect.php"; ?>
+<?php include_once "../backend/dbconnect.php"; ?>
 <div class="container border_cv">
   <div class="col-md-12">
     <h4></h4>
-    <form action="backend/add/addStadWinkel.php" method="post">
+    <form action="../backend/add/addStadWinkel.php" method="post">
       <table>
         <tr>
           <td>

@@ -14,21 +14,21 @@
 
   //if Condition: check if submit button is clicked and redirect
   if (!isset($_POST['submitAddWinkel'])) {
-    header("location: ../../index.php?signup=error");
+    header("location: ../../templates/addIndex.php?signup=error");
   }
   //Elseif Condition: check if an input is empty and redirect
   elseif (empty($stadSelect) || empty($winkelSelect) || empty($filialen)) {
-    header("location: ../../index.php?signup=empty");
+    header("location: ../../templates/addIndex.php?signup=empty");
   }
   //Elseif Condition: double data check and redirect
   elseif ($rowCountStadWinkel >= 1) {
-    header("location: ../../index.php?signup=dubbleDataSW");
+    header("location: ../../templates/addIndex.php?signup=dubbleDataSW");
   }
   //Else condition: Add entry to the database
   else {
     $sqlInsert = "INSERT INTO stad_winkel (stad_id, winkel_id, aantal_filialen) VALUES ('$stadSelect', '$winkelSelect', '$filialen');";
     mysqli_query($conn, $sqlInsert);
-    header("location: ../../index.php?signup=succes");
+    header("location: ../../templates/addIndex.php?signup=succes");
   }
 
 ?>

@@ -18,28 +18,28 @@
 
   //if Condition: check if submit button is clicked and redirect
   if (!isset($_POST['submitAddWinkel'])) {
-    header("location: ../../index.php?signup=error");
+    header("location: ../../templates/addIndex.php?signup=error");
   }
   //Elseif Condition: check if an input is empty and redirect
   elseif (empty($winkel_id) || empty($winkel)) {
-    header("location: ../../index.php?signup=empty");
+    header("location: ../../templates/addIndex.php?signup=empty");
   }
   //Elseif Condition: valid characters check and redirect
   elseif (!preg_match("/^[a-z]*$/", $winkel_id) || !preg_match("/^[ a-zA-Z-]*$/", $winkel)) {
-    header("location: ../../index.php?signup=unvalidCharacters");
+    header("location: ../../templates/addIndex.php?signup=unvalidCharacters");
   }
   //Elseif Condition: double data check and redirect
   elseif ($rowCountWinkelNaam >= 1) {
-    header("location: ../../index.php?signup=dubbleDataWinkel");
+    header("location: ../../templates/addIndex.php?signup=dubbleDataWinkel");
   }
   //Elseif Condition: double data check and redirect
   elseif ($rowCountWinkelid >= 1) {
-    header("location: ../../index.php?signup=dubbleDataId");
+    header("location: ../../templates/addIndex.php?signupdubbleDataId");
   }
   //Else condition: Add entry to the database and redirect
   else{
     $sqlInsert = "INSERT INTO winkel (winkel_id, winkel_naam) VALUES ('$winkel_id', '$winkel');";
     mysqli_query($conn, $sqlInsert);
-    header("location: ../../index.php?signup=succes");
+    header("location: ../../templates/addIndex.php?signup=succes");
   }
 ?>
